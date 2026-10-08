@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Home Decor Buyers Lead Generation App
 
-## Getting Started
+A premium, modern web application designed for home decor sellers and wholesalers to discover B2B buyers (retailers, interior designers) in the United States and send them direct outreach emails.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dynamic Buyer Search:** Instantly fetch targeted businesses (like "Home Decor", "Furniture") in any US location.
+- **Automated Email Discovery:** Automatically synthesizes or discovers contact emails for generated leads.
+- **Direct Outreach:** Send personalized partnership outreach emails directly from the dashboard via a beautiful animated modal.
+- **Premium UI:** Designed with modern aesthetics including glassmorphism, smooth animations, and a sleek dark-mode layout.
+- **Fail-Safe Fallbacks:** Built-in mock data generation ensures the UI always functions perfectly even if API limits are reached.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Technology Stack
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Frontend & Backend Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Icons:** [Lucide React](https://lucide.dev/)
+- **Business Discovery API:** [Foursquare Places API (v2)](https://location.foursquare.com/developer/reference/places-api-overview)
+- **Email Discovery API:** [Snov.io](https://snov.io/)
+- **Email Delivery API:** [Resend](https://resend.com/)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## ⚙️ Local Setup
 
-## Learn More
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/surajpsharma/home-decor-buyers.git
+   cd home-decor-buyers
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+3. **Configure Environment Variables:**
+   Create a `.env.local` file in the root directory and add your API keys:
+   ```env
+   FOURSQUARE_CLIENT_ID="your_foursquare_client_id"
+   FOURSQUARE_CLIENT_SECRET="your_foursquare_client_secret"
+   SNOVIO_CLIENT_ID="your_snovio_client_id"
+   SNOVIO_CLIENT_SECRET="your_snovio_client_secret"
+   RESEND_API_KEY="your_resend_api_key"
+   ```
+   *(Note: If the environment variables are omitted, the app gracefully falls back to mock data for demonstration purposes).*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+5. **Open the App:**
+   Navigate to [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📝 Internship Submission Note
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project was built to demonstrate dynamic API integration, robust error handling (with intelligent fallbacks), and modern frontend architecture using Next.js and Tailwind CSS.
