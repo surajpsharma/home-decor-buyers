@@ -1,5 +1,7 @@
 # Home Decor Buyers Lead Generation App
 
+**🌍 Live Demo:** [https://home-decor-buyers.vercel.app/](https://home-decor-buyers.vercel.app/)
+
 A premium, modern web application designed for home decor sellers and wholesalers to discover B2B buyers (retailers, interior designers) in the United States and send them direct outreach emails.
 
 ## 🚀 Features
